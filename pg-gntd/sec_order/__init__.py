@@ -1,4 +1,4 @@
-from gntd.gntd.sec_order import td_kfac
+from sec_order import td_kfac
 from sec_order import kfac, ekfac, td_kfac, lstd, adamw, kfac_ming
 from sec_order import _utils, types
 
