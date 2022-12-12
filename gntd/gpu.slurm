@@ -32,8 +32,8 @@ for ((i=0;i<5;i+=1))
 do 
 	for env in ${envs[*]}
 	do
-		python main.py --train_offline --use_gntd --damping 0.5 --momentum --lr 1e-5 --env $env --seed $i --save_mat --policy $policy
-        python main.py --train_offline --lr 1e-5 --env $env --seed $i --save_mat --policy $policy
+		python main.py --train_offline --use_gntd --damping 0.5 --momentum --lr 3e-4 --env $env --seed $i --save_mat --policy $policy
+        python main.py --train_offline --lr 3e-4 --env $env --seed $i --save_mat --policy $policy
         python main.py --train_offline --option td --use_gntd --damping 0.5 --momentum --lr 1e-5 --env $env --seed $i --save_mat --policy $policy
         python main.py --train_offline --option td --lr 1e-5 --env $env --seed $i --save_mat --policy $policy
 	done
